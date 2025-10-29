@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load model & scaler
-model = pickle.load(open(r"C:\Users\KIIT\tasks\diabetes-predictor\trained_model.sav", "rb"))
-scaler = pickle.load(open(r"C:\Users\KIIT\tasks\diabetes-predictor\scaler.sav", "rb"))
+model = pickle.load(open(r"trained_model.sav", "rb"))
+scaler = pickle.load(open(r"scaler.sav", "rb"))
 
 def diabetes_prediction(input_data):
     columns = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
@@ -45,3 +45,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
